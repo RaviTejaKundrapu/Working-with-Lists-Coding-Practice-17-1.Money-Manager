@@ -1,0 +1,146 @@
+/* Money Details CSS */
+
+/* Container for All Cards */
+.allCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Container for Balance, Income, and Expenses Details */
+.balanceDetailsContainer,
+.incomeDetailsContainer,
+.expensesDetailsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+/* Styling for Balance Card */
+.balanceDetailsContainer {
+  background-color: #ecfccb;
+  border: 1px solid #84cc16;
+}
+
+/* Styling for Income Card */
+.incomeDetailsContainer {
+  background-color: #cffafe;
+  border: 1px solid #06b6d4;
+}
+
+/* Styling for Expenses Card */
+.expensesDetailsContainer {
+  background-color: #ede9fe;
+  border: 1px solid #7c3aed;
+}
+
+/* Container for Money Cards */
+.moneyCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Common Style for Icons */
+.imageIcon,
+.expenseImageIcon {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+/* Text Styles */
+.cardName {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #2e3640;
+  font-weight: 600;
+}
+
+.amount {
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #2e3640;
+  font-weight: 600;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 767px) {
+  .allCards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .balanceDetailsContainer,
+  .incomeDetailsContainer,
+  .expensesDetailsContainer {
+    width: 32%; /* Width for medium screens */
+    margin-right: 10px;
+  }
+
+  .expensesDetailsContainer {
+    margin-right: 0; /* Remove right margin for the last item */
+  }
+
+  .cardName {
+    font-size: 15px;
+  }
+
+  .amount {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .balanceDetailsContainer,
+  .incomeDetailsContainer,
+  .expensesDetailsContainer {
+    width: 30%; /* Width for large screens */
+    margin-right: 10px;
+  }
+
+  .expensesDetailsContainer {
+    margin-right: 0; /* Remove right margin for the last item */
+  }
+
+  .cardName {
+    font-size: 17px;
+  }
+
+  .amount {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .balanceDetailsContainer,
+  .incomeDetailsContainer,
+  .expensesDetailsContainer {
+    width: 28%; /* Width for extra-large screens */
+    margin-right: 10px;
+  }
+
+  .expensesDetailsContainer {
+    margin-right: 0; /* Remove right margin for the last item */
+  }
+
+  .cardName {
+    font-size: 19px;
+  }
+
+  .amount {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,304 @@
+/* Write your CSS here Money Manager */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.appContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profileContainer {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 3px;
+}
+.userName {
+  font-family: 'Roboto';
+  font-size: 19px;
+  color: #2e3640;
+  font-weight: 900;
+}
+.message {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #455261;
+  font-weight: 500;
+}
+
+.moneyManagerSpan {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #0b69ff;
+  font-weight: 600;
+}
+
+/* inputs css */
+
+.inputsAndHistoryContainer {
+  width: 85%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.InputsContainer {
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+  border: 1px solid rgb(91, 103, 97);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content:;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.addTranscationHeading {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 17px;
+  color: #1e293b;
+}
+
+.formContainer {
+  margin-left: 16px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 15px;
+  color: #3e4756;
+  margin-top: 4px;
+}
+
+.titleInput {
+  border: 1px solid #9aafc7;
+  border-radius: 3px;
+  outline: none;
+  width: 240px;
+  height: 30px;
+  background-color: white;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.amountContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+
+.amount {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 15px;
+  color: #3e4756;
+  margin-top: 4px;
+}
+
+.amountInput {
+  border: 1px solid #9aafc7;
+  border-radius: 3px;
+  outline: none;
+  width: 240px;
+  height: 30px;
+  background-color: white;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+
+.type {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 15px;
+  color: #3e4756;
+  margin-top: 4px;
+}
+
+.selectionBar {
+  border: 1px solid #9aafc7;
+  border-radius: 3px;
+  outline: none;
+  width: 240px;
+  height: 28px;
+  background-color: white;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  color: #334155;
+  margin-top: 5px;
+}
+
+.option {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 15px;
+  color: #3e4756;
+  margin-top: 4px;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b69ff;
+  outline: none;
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 4px;
+  padding: 4px;
+  width: 70px;
+  height: 27px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tableForTransactions {
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid rgb(91, 103, 97);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  padding-left: 16px;
+  padding-bottom: 10px;
+}
+
+.headRows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 97%;
+  border: 1px solid rgb(22, 23, 22);
+  border-radius: 5px;
+  height: 40px;
+}
+
+.columnName {
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(22, 21, 21);
+}
+
+@media all and (min-width: 767px) {
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    padding-left: 13px;
+  }
+  .userName {
+    font-size: 24px;
+  }
+  .message {
+    font-size: 19px;
+  }
+
+  .moneyManagerSpan {
+    font-size: 21px;
+  }
+
+  /* inputs css */
+
+  .inputsAndHistoryContainer {
+    width: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .InputsContainer {
+    width: 80%;
+    margin-right: 20px;
+  }
+
+  .addTranscationHeading {
+    font-size: 20px;
+  }
+
+  .formContainer {
+    margin-left: 16px;
+  }
+
+  .titile {
+    font-size: 17px;
+  }
+
+  .amount {
+    font-size: 17px;
+  }
+
+  .type {
+    font-size: 17px;
+  }
+
+  .option {
+    font-size: 17px;
+  }
+
+  .addBtn {
+    font-size: 18px;
+    width: 75px;
+    height: 29px;
+  }
+
+  .columnName {
+    font-size: 18px;
+  }
+}

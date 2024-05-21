@@ -1,0 +1,33 @@
+/* Write your CSS here */
+
+.row {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 97%;
+  border: 1px solid rgb(54, 57, 54);
+  border-top: none;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.column {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(111, 111, 111);
+}
+
+.deleteBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+}
+.delImg {
+  width: 15px;
+  height: 15px;
+}
